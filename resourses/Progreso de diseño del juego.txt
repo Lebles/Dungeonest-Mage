@@ -1,0 +1,185 @@
+Juego: Dungeonest Mage
+
+Notacion en el desarrollo
+==================================================================================
+[borrar] ----> para todo lo que borrare si no uso eventualmente
+#[borrar] ----> para todos los comentarios que borrare cuando la explicacion de la clase sea evidente
+[cambiar] ----> cuando algo debe de ser cambiado, en mi opinion del momento, en algun momento
+[falta] ----> parte del programa por la que me quede cuando deje de programarlo. Puede ser tanto de un programa que estoy
+			  haciendo activamente como de uno que deje de hacer.
+
+
+==================================================================================
+Lista organizativa de acciones:
+# La idea de la siguiente lista es que no puede hacer lo que sigue sin hace lo que va antes
+
+X- 1er Item
+X- Inventario
+X- Sistema para lanzar objetos
+X- Sistema para correr
+X- 1er Enemigo
+X	- Mejorar sistema universal de coliciones (anadir peso y fuerza continua)
+X		- Mejorar lanzado de items, para que sea mas presiso
+X	* Decidir si el jugador debe ser una entidad
+X		- Si si (o tal vez incluso si no), vale la pena replantearce el sistema de correr, para que no
+		  se acceda a la maxima velocidad de un solo tiron
+X- Drop de enemigos
+X- Sistema para dogear
+X- Forma basica del nivel 0
+X- Muerte del jugador
+X- Mapa casa del jugador (juego en modo pokemon)
+X- Forma basica e irregulada de la mesa de hacer hechizos (aka sistema de ensamblaje modo creativo)
+X- 1er hechizo configurado
+
+================= Gran Logro I | Pasando a la fase de desarrollo II ==================================================
+
+%- Inventario de hechizos
+- Sistema de guardado (al menos para los hechizos creados)
+	# Me sera necesario mejorarlo y adaptarlo en el camino para ciertas cosas
+- Perfeccionar un poco el sistema de entidades para optimizar los distintos tipos de entidades (pensantes, items y ataques)
+	- Perfeccionar la mocion para simplificar los calculos de las cosas que se mueven
+		- Sistema de efectos continuos (como envenenamiento, o cortada) en las entidades (y el jugador)
+	- Pensar en si deberia mejorar la hitbox del mapa para los objetos no cuadrados
+- 1er hechizo de alteracion del terreno
+	- Cuando crees el sistema de destruccion de terreno, recuerda actualizar el sistema de mocion para hacer que los objetos con
+	  alta mocion tambien detrullan el terreno
+- Generador de mundo simple y plano (para probar)
+	- Perfeccionar (optimizar) navegacion por Dijkstra de la IA, a ser una maya de navegacion (ten en cuenta que tambien mejoraras
+	  la IA en el siguiente paso).
+	* Decidir si las paredes deben estar hechos de Rectagle
+- Perfeccionar sistema de doge
+- Multiples enemigos (al menos 20?, que la variedad sea reprecentativa de los sistemas que se crearan)
+	- Sistema de resistencia a ataques (o efectos)
+	- ? Sistema de rastreo en conjunto del jugador
+		* Recordar crear tacticas evacivas y de franqueo para la IA
+- Crear regiones adicionales (para pruebas)
+- Sistema de generacion de enemigos por tipo de region y azar
+	* La idea seria que en cada ocacion se escojan diversos enemigos que generar, no solo por region, sino por juego; y cada enemigo
+	con diferentes posibilidades de aparecer, y distintos niveles (o estadisticas) para cada instancia de enemigo.
+- Ver la vida (y tal vez el nivel?) de los enemigos al pasar el mouse por ensima (puede que no sea nesesario si dejo activado el f3)
+- Sonido en el juego
+- Sistema de dinero (no tiene que ser simple, pero no tiene que ser super complejo, de modo que no sea dificil modificarlo despues)
+- Pensar y (potencialmente) desarrollar el sistema de optener experiencia a travez de literales "nuevas experiencias"
+	* Requiere crear una variable "experiencia", o algo asi
+- Regular (costo-efecto, al menos de forma basica) mesa de hechizos
+- Multiples hechizos (varios, que la variedad sea reprecentativa de los sistemas que se crearan)
+	- Anadir sistema para colocarles descripciones y nombres que se vean luego
+- Multiples items (una cantidad que reprecente los distintos tipos de cosas de un juego de fantasia)
+	- Crear sistema para que los items puedan dispara hechizos (esto es, sistema de encantamientos)
+	- Obiamente, el sistema de descripcion de los items tambien va para esto
+- Sistema de cofre (obio el jugador tiene mas objetos en general, ademas de solo los que lleva a la dungeon)
+- Entidades amigables (aldeanos?, comerciantes?, cosas asi)
+- Crear sistema de descanso
+- Sistema de compra de simbolos por la experiencia
+- Sistema de mejoramiento de caracteristicas automatico al repetir ciertas acciones
+- Menu de inicio y para iniciar un juego
+- Sistema de hechizos continuos (si es que ya no existen) / Mejorarlo y adaptarlo al juego final (si es que ya existe)
+- Mejorar sistema de encantamientos, para incluir mas encantamientos especializados
+- Sistema de "artes marciales" (lo cual se reduce a convinaciones especificas de acciones que un jugador puede hacer. Entre estas
+  habran acciones que el jugador no podra hacer sin "artes marciales")
+- Multiples artes marciales (varios, que la variedad sea reprecentativa de los sistemas que se crearan)
+- Multijugador
+
+----- Expandir y complejizar generacion de mundo (proyecto en si mismo). El proceso incluira (no necesariamente en este orden):
+- Mas tipos de region
+- Mas tipos de item
+- Mas tipos de hechizo
+- Crear pueblos
+- Mas habilidades ("artes marciales")
+- Crear bosses
+- Crear eventos y posibles historias
+
+
+==================================================================================
+Lista de Pendientes del juego
+==================================================================================
+	
+--- Historial de Desarrollo ---
+
+@	Pensar en los hechizos que quiero que existan
+	
+@	Pensar en los glifos que se acomoden a dichos exchizos
+	
+@	Crear la mesa de magia como algo que puede acceder a un inventario
+	
+@	Crear los sprites para los glifos
+	
+	@	Comprobar que los sprites se ven
+	
+@	Crear primera configuracion de simbolos: bola de fuego
+		
+	@	Crear entidad esfera
+		
+		@	Crear hitbox de esfera
+			
+	@	Provar que la entidad funciona, a travez que generar una nadamas inicie el juego
+		
+		@	+ Hacer que se mueva en una direccion especifica (por ahora)
+			
+		@	+ Hacer que se destrulla al tocar algo solido
+		
+	@	Hacer que la esfera cargue el simbolo ejecutor del da;o
+
+	@	Hacer que el simbolo haga el da;o a quien entre en contacto con la esfera (provarlo con el jugador)
+		
+	@	Hacer que la esfera se destrulla cuando se haya terminado de aplicar todo el da;o
+	
+	@	Crear los simbolos con los nombres teoricos y haer que se muestren en pantalla (arraylist en mesamagia)
+	
+	@	Crear las lineas que unen cada simbolo
+		
+	@	Hacer que se puedan colocar simbolos
+		
+		@	Crear un arry de los simbolos que se instanciaran
+			
+		@	Hacer que dicho array se muestre en la interfaz
+			
+		@	Hacer que cuando el mouse este por ensima de estos, entonces se coloque un cuadrado blanco
+			
+		@	Hacer que cuando se clickee un simbolo este se coloque automaticamente en el primer espacio disponible
+				Para esto, utilizare un objeto simbolo que sirva como pipe para llevar lo clicado a li puesto
+		
+	@	Hacer que el jugador pueda lanzar la esfera (pese a no tener hechizos perse aun)
+	
+		@	Crear temporalmente una nueva tecla
+			
+		@	Hacer que al precionar la tecla, se precione el ejecutar del simbolo esfera
+			
+%	Crear clase "hechizos" o algo, la cual emule inventario en mostrar slots y tener un menu
+	
+	@	Crear clase "hechizario"
+		
+	@	Emular los slots
+		
+	@	Hacer que pueda cambiar entre slots de items y de hechizos
+		
+	@	Crear menu para inventario de hechizos
+		
+	@	Hacer que la forma basica de los hechizos se reprecente
+		
+	@	Crear inicializador automatico randomizado de "hechizos"
+		
+%	* Crear clases y/o funciones para dividir y organizar la clase jugador
+	
+		- Asegurarme de que no pueda mover el selector de item/spell entre columnas
+	
+	Hacer sistema que muestre los hechizos creados en el inventario de hechizos (solo mostrar, no alterar)
+	
+	Hacer que puedas colocar los hechizos del inventario de hechizos en el handler de hechizos, y que como resultado estos hechizos
+	se coloquen mas adelante en la lista de hechizos creados.
+	
+	Hacer que, al clicar en los hechizos, se ejecuten
+	
+	
+	
+	
+	
+	
+	
+	+++ RECUERDA que esto sirve para colocar tus planes y no olvidarlos, y que si no sabes que poner en tus planes, debes de poner
+	como te imaginas que descomponen las cosas que quieres implementer, y luego como se descomponen esas cosas, y asi, asta que
+	sea lo suficientemente evidente que tienes que hacer en todo momento.
+
+# implementar en un futuro que los enemigos puedan tener resistencias o comportamientos especiales con los ataques.
+
+# implementar sistema de rastreo inteligente para los enemigos

@@ -1,0 +1,347 @@
+=============================================================================
+	Logros Obtenidos:
+=============================================================================
+
+@	Crear ventana
+		
+@	Crear base de UI
+		
+@	Crear personaje en pantalla
+		
+@	Crear suelo
+	
+@	Crear movimiento del personaje
+	
+@	Crear sistema de bloques del mundo
+	
+	@	Crear grid numeral
+		
+	@	Crear sistema de coliciones con bloques
+	
+		@	Hacer que las coliciones sea exactas
+			
+		@	Hacer que se tenga en cuenta toda la hitbox
+	
+@	Crear Mapa de prueva
+	
+@	Crear sistema de entidades (pruebalo con un dommy)
+	
+	@	Crear sistema de sprites para entidades
+	
+@	Crear Espada y su animacion
+
+	@	Crear puntero del jugador
+		
+	@	Hacer que la espada apareza un momento al hacer clic
+		
+	@	Hacer que aparezca con la direccion del clik
+		
+	@	Hacer animacion de espada
+	
+@	Crear sistema de vida (para poder matar al dommy)
+		
+	@	Dar vida a las entidades
+
+	@	Implementar sistema de hitboxes ofensivos
+	
+		@	# Implementar el uso de Rectangle y Line2D para crear hitboxes presisas
+			
+		@	Crear sistema de deteccion de golpes (vida float)
+	
+	@	Crear GUI de vida del jugador
+		
+@	Hacer primer item (item espada)
+	
+	@	Hacer sistema basico de tags para categorizar enemigos
+		
+	@	Hacer que el jugador solo ataque a entidades con la tag "enemigo"
+		
+	@	Categorizar espada como "item"
+		
+	@	Crear una vercion de la espada que este en el suelo en posicion basica y sea inofenciva
+	
+	@	Crear GUI de un slot de mano
+		
+	@	Crear sistema para almacenar entidades de tipo item (al menos un slot)
+		
+	@	Hacer que se pueda soltar el objeto con una tecla (por ahora)
+	
+	@	Hacer que pueda volver a agarrar el objeto con la tecla
+		
+	@	Hacer que puedas atacar usando el objeto
+		
+		@	Implementar alguna vercion de un sistema general de uso de objetos
+
+* Hacer inventario:
+	
+@	Crear figura del segundo slot y figura de acceso al inventario
+	
+@	Hacer que puedas moverte entre dichas figuras con la rueda del mouse
+
+	@	A;adir funcion de museWheelListener al raton y la pantalla
+	
+	@	Hacer que la seleccion se marque como un cuadrado blanco detras de la figura seleccionada
+	
+@	Permitir guardar otro item en el segundo slot y usarlo
+	
+@	Crear otro item que sea una comida que aumente la vida o algo
+	
+@	Hacer que la pantalla se oscurezca cuando accedas al menu de items (solo la pantalla del mundo)
+
+	@	Exprecion grafica
+
+	@	Crear una clase inventario y poner su objeto dentro de jugador para administrar todo esto
+
+	@	Hacer que el jugador deje de interpretar el mouse como "en el campo" cuando la pantalla esta asi
+		
+		@	El jugador no debe poder mover la rueda del raton de forma funcional en esto
+		
+	@	(por ahora) cuando vuelvas a hacer click, la pantalla debe de volver al juego normal
+
+@	Hacer que aparezca un boton de "volver" en dicha pantalla oscurecida
+	
+	@	Buscar o hacer un sprite de boton
+		
+	@	Proyectar el boton en la pantalla oscuresida
+		
+	@	Proyectar la palabra "volver" en dicho boton
+		
+	@	Hacer que al precionarlo vuevlas al juego normal
+	
+@	Hacer que aparezcan un monton de items distintos en la parte del inventario, organizados en forma de cuadrado
+		
+	@	Crear un arrayList en inventario que tenga a los items
+		
+	@	Meterle un monton, de forma irregular, de los 2 objetos que hemos creado
+		
+	@	Hacer que los objetos se proyecten en un recuadro determinado
+	
+@	Hacer que puedas seleccionar cualquiera de esos items y cambiar su orden interno en el inventario
+	
+	@	Asignar un rect a cada item
+		
+	@	Hacer que al cliquearlos se guarde como los clickeastes
+		
+	@	Quitarlos del array cuando los cliqueas
+		
+	@	Hacer que se proyecte en el mouse y sobre los demas items mientras lo tienes agarrado
+		
+	@	Quitar los rect mientras sostienes el item, y asignar en su lugar lines al lado de cada objet
+		
+	@	Detectar cual de esas lines esta colicionando, y marcarla en amarillo
+		
+	@	Usar esa deteccion para reasignar el item a una nueva posicion del arraylist
+	
+@	Hacer que puedas tomar cualquiera de esos items y colocarlo en la barra de "mano"
+	
+	@	Mientras las lineas estan asignadas, asigna unos rects tambien a los items en la barra de usos (la mano)
+		
+	@	Detecta si el cuadro de lo seleccionado coliciona con alguno de esos cuadros
+		
+	@	Si lo hace, reemplaza el item en esa posicion con el nuevo, y el nuevo colocalo en la primera posicion del array
+	
+	@	Hacer tambien que puedas tomarlos de la barra de mano
+			
+		@	Transferir Hand a inventario
+		
+		@	Crear un int de menu, para poder hacer algo similar con los conjuros
+			
+		@	Transferir funciones de hand
+			
+		@	Arreglar bread
+
+@	Hacer que los items no sean una linea, sino un recuadro de items, como un inventario, y que este marcado
+	
+$	[postergado] Hacer que aparezca una una barra de desplazamiento funcional cuando los items en el inventario sean demaciados
+
+@	Poner una tecla soltar objetos
+
+@	Hacer que item sea una clase abstracta en lugar de una interface
+	
+@	Crear sistema de movimiento por mocion super basico y universal
+		
+		# Que tenga la velocidad del objeto y un ritmo universal de desaceleracion
+		
+	@	Crear vectores de velocidad X y Y en las entidades
+		
+	@	Crear vectores de posicion hx y hy en las hitboxes, con los que los anteriores vectores puedan operar
+	
+	@	Crer sistema de movimiento por momento universal, con su desaceleracion
+
+		@	Ajustando sistema porque como lo hice al principio daba errores en las entidades no sometidas a el
+	
+@	Hacer que la tecla de soltar objetos expulse los objetos con una mocion
+
+	@	Ajustar como los objetos chocan contra las paredes para que no tega errores de acumulacion de momento
+		
+	@	Ajustar como los objetos chocan contra las paredes para que puedan deslizarce (al menos un poco) por ellas y no parar en seco
+	
+@	Hacer que el boton de lanzar objetos sea para doblar la velocidad
+
+	@	Reasignar temporalmente el boton de lanzar objetos a la barra espaciadora
+	
+	@	Invertir botones de barra espaciadora y E
+	
+@	Crear barra de stamina diferente de la barra de resistencia
+	
+@	Gastar stamina al aumentar la velocidad
+	
+@	Hacer que cuando cliqueas un item cercano al personaje, con la barra de mano basia, el item se recoja
+	
+@	Hacer que si lo haces con la barra de mano en el "+" se te meta en el inventario directamente
+
+@	Hacer que con doble clic derecho el objeto salga disparado en alguna direccion (solo direccion por ahora)
+	
+@	Crear entidad slime (requiere cargar una imagen y asociarla a una entidad)
+	
+@	Hacer que persiga al jugador a saltos, siegamente (sin fijarce en paredes ni nada, solo llendo en linea recta)
+
+	@	Crear un contador en slime
+		
+	@	Hacer que de un salto en direccion al jugador cada vez que el contador llega a cierto punto
+	
+@	Hacer que le haga da;o al jugador cuando se encuentra colicionando con el
+
+	@	Replicar el sistema de deteccion de entidades y da;o que hay en el ataque de la espada
+			Eso no sirvio de nada porque el jugador no es una entidad, imbesil.
+		
+	@	Hacer que da;e al jugador si coliciona con el
+	
+@	Crear sistema de coliciones con entidades (provar al lanzarle items) (recordar que no son colociones,
+	sino repulciones, como MC) #investigar
+	
+	@	Crear frenado especifico (peso)
+		
+	@	Crear repelencia universal
+		
+		@	Hacer que todas las entidades se detecten unas a otras y se repelan
+		X	Resulto ser un concepto muy malo
+	
+@	$ Proyecto Correccional: friccion y peso
+	
+	@	Volver a la friccion universal y reajustar las repulsiones a ser simplistas
+	
+	@	Crear un sistema de peso (inercia a ser movido / knockback)
+		
+	@	Crear un sistema de repulciones basado en clases: item, entidad, ataque
+	
+@	Perfeccionar sistema de lanzado para que sea mas preciso
+	
+@	Convertir al jugador en una entidad #investigar
+	
+@	Perfeccionar correr para que sea progresivo
+	
+@	Crear entidad zombie y perfeccionar movimiento continuo con ataque al toque
+	
+@	Crear sistema de navegacion de entidades por Dijkstra
+	
+@	Crear metodo que devuelva 2 objetos, que son 2 arrays de items y sus probabilidades de aparecer
+	
+@	Invocar el metodo en la muerte
+		
+@	Hacer que las hitboxes sean indetectables mientras estas en modalidad dogeo
+	# Logrado al hacer un cambio en el metodo 'collide' de las entidades, no de las hitboxs en si mismas
+	
+@	Hacer que, al precionar 'e', el jugador acceda al doge por un momento
+	
+@	Hacer que el sprite del jugador se emblanquesca por un momento mientras dura el dogeo
+
+@	Hacer que el jugador pueda volver a el nivel de prueva desde el nivel 0
+
+	@	Crear un objeto unico y ponerlo dentro de game, al menos por ahora
+	
+@	Hacer casa del jugador
+	
+@	Agrandar mapa 0
+	
+@	Hacer que el juego pueda cargar las clases anteriores
+
+@	Buscar imagen adecuada para la mesa de hacer hechizos [Decor0 : 6, 6]
+	
+@	Crear entidad mesa
+	
+@	Hacer que no pueda ser empujada por nada
+	
+@	Hacer que cuando cliclee sobre ella, en lugar de ponerce en mi mano o algo asi, me acceda a un menu
+	(por ahora solo que se oscuresca la pantalla y ponga un nombre de menu)
+	
+@	Hacer sistema de menues para que puedan existir diversos menues
+	
+@	Integrar inventario en el sistema de menues
+
+=============================================================================
+	Cambio de paradigma:
+	He decidido que hare que mi juego evolucione en ser una especie de "Fantasy Simulator". Como asta ahora el plan era construir un
+	juego que fuera mas bien rouge-like, en una dungeon subterranea siempre cambiante, pero ese ya no será el plan, colocare en este
+	apartado cual era el plan original (como forma de registro).
+	
+Lista organizativa de acciones:
+
+X- 1er Item
+X- Inventario
+X- Sistema para lanzar objetos
+X- Sistema para correr
+X- 1er Enemigo
+X	- Mejorar sistema universal de coliciones (anadir peso y fuerza continua)
+X		- Mejorar lanzado de items, para que sea mas presiso
+X	* Decidir si el jugador debe ser una entidad
+X		- Si si (o tal vez incluso si no), vale la pena replantearce el sistema de correr, para que no
+		  se acceda a la maxima velocidad de un solo tiron
+X- Drop de enemigos
+X- Sistema para dogear
+X- Forma basica del nivel 0
+X- Muerte del jugador
+X- Mapa casa del jugador (juego en modo pokemon)
+X- Forma basica e irregulada de la mesa de hacer hechizos (aka sistema de ensamblaje modo creativo)
+X- 1er hechizo configurado
+%- Crear salon de pruevas basico // lugar donde ir al precionar un boton, y luego volver a donde estabas al volver a precionarlo
+- Inventario de hechizos
+- Sistema de guardado (al menos para los hechizos)
+	- Perfeccionar un poco el sistema de entidades para optimizar los distintos tipos de entidades (pensantes, items y ataques)
+		- Perfeccionar la mocion para simplificar los calculos de las cosas que se mueven
+		- Pensar en si deberia mejorar la hitbox del mapa para los objetos no cuadrados
+	# Me sera necesario mejorarlo y adaptarlo en el camino para ciertas cosas
+- 1er hechizo de alteracion del terreno
+	- Cuando crees el sistema de destruccion de terreno, recuerda actualizar el sistema de mocion para hacer que los objetos con
+	  alta mocion tambien detrullan el terreno
+- Generador de pisos basico
+	- Hacer que el fondo negro se remplace por algo mas estetico
+	- Perfeccionar (optimizar) navegacion por Dijkstra de la IA, a ser una maya de navegacion
+	* Decidir si los niveles deben estar hechos de Rectagle
+- Multiples enemigos
+	- ? Sistema de rastreo del jugador
+		* Recordar crear tacticas evacivas y de franqueo para la IA
+	- Sistema de resistencia a ataques (o efectos)
+- Ver la vida de los enemigos al pasar el mouse por ensima
+- Sistema de efectos continuos (como envenenamiento, o cortada) en las entidades (y el jugador)
+- Generador de enemigos por piso
+- Sistema de niveles/exp basico
+- Asignacion de exp soltada a los enemigos
+- Dinero del jugador (solo cuando esta en el nivel 0)
+- Regular (costo-efecto, al menos de forma basica) mesa de hechizos
+- Multiples hechizos
+- Multiples items
+- Ver usos (o algun otro stat importante) de los items al pasar el mouse por encima en el inventario o la mano
+- Sistema de cofre (ovio el jugador tiene mas objetos en general que solo los que lleva a la dungeon)
+- Comerciantes
+- Sistema de mejoras por nivel
+- Sistema de compra de habilidades
+- Mejorar sistema de niveles/exp
+- Aplicar desbloqueo de hechizos por niveles y al azar
+- Generador de items en dungeon
+- Menu inicial
+
+// Lista teorica de cosas que irian despues, sin ningun orden en particular:
+- Multijugador
+- Multiples pisos
+	- Mas creaturas
+- Mas tipos de hechizo
+- Mas habilidades
+- Mas tipos de item
+- Crear bosses
+- Crear eventos especiales
+- Crear introduccion de historia del juego
+- Crear eventos que revelen la historia de la dungeon
+	
+	En lo siguiente, se continuara con el hitorial de desarrollo de esta nueva direccion
+=============================================================================

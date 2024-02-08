@@ -1,0 +1,81 @@
+Planes de disenno:
+Sobre la parte de generacion de mundo y demas ya he habaldo en notion, so aqui hablare sobre lo que tiene que ver con las necesidades
+especificas de la plataforma que pienso usar, que es diferente de la de comandos:
+
+1. Necesito una intefaz que sea facil de entender y usar, y con la cual el jugador no solo tenga disponibles todas las opciones basicas
+sino tambien pueda acceder facilmente a las acciones mas habanzadas cuando obtenga las habilidades.
+2. Necesito un motor de fisicas competente que sea capaz tanto de cosas con sentido comun como de adaptarce a los efectos especiales de
+las cosas.
+
+Soluciones:
+1. La interfaz de The Dungeonest Mage no esta mal, aunque naturalmente le faltan algunas cosas que mostrar, y algunos controles tambien,
+pero va por buen camino.
+2. Hacer un motor de fisicas en teoria no deberia ser tan complicado, sin embargo teniendo en cuenta la necesidad de expeciones y las
+caracteristicas que queremos inluir puede ser un poco retador adatar todas las cosas. Lo mejor sera listar las caracteristicas que se
+desean simular primero, y luego pensar en como adaptarlas a expeciones.
+
+============================================================
+Disenno de 1:
+
+Cosas que se deben mostrar
+- El mundo y el ambiente, personaje en el centro, vicion equidistante, pero no a especios confinados
+- La vida del jugador (fatiga?)
+- La stamina o energia del jugador
+- Dinero
+- Mano del jugador (items en mano)
+- Mente del jugador (hechizos/tecnicas rapidas)
+- Efectos de estado (y  su duracion)
+- Amigos (una estrella sobre npc?)
+- Carga y cooldown de los artefactos y hechizos
+
+Controles que debe haber:
+- Habrir menu de pausa
+- Las habilidades y objetos se usaran y activaran con la rueda el el click
+- Debes poder tirar los objetos
+- Debes poder recojer los objetos
+- Debes poder interactuar con las cosas y personas (tambien en mas de una forma)
+- Debes poder golpear y defender (la idea de parry esta buena)
+- Habrir comandos
+
+> Tener en cuenta que cada item y hechizo deberia ser capaz de interpretar los botones de la forma en que mejor entienda
+
+
+
+
+=======================================================================
+Desenno 2:
+
+En la simulacion de un mundo, debemos considerar 2 elementos diferenciables de como el mundo se comporta:
+- El mundo en si mismo (el background, podriamos decir)
+- Los objetos en el mundo (los cuales pueden estar binculados a sistemas que ellos formen)
+
+Caracteristicas del mundo:
+- Iluminacion
+- Clima
+- Geografia (suelos, paredes, liquidos, hoyos) (propiedades de tile?)
+
+Caracteristicas que queremos incluir:
+- Masa
+- Volumen (hitbox?)
+- Tangibilidad?
+- Mosion
+- Posicion
+- Comportamiento
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

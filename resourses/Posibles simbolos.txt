@@ -1,0 +1,57 @@
+Prerrogativas:
++ Los hechizos deben estar diseñados para solamente soportar la aplicacion maxima del efecto.
+
++ La diferencia entre los aplicadores y el efecto es que los aplicadores buscan objetivos y los efectos los transforman
++ La diferencia entre los aplicadores y los filtros es que los ultimos solo funcionan con otros aplicadores o filtros
++ La diferencia entre los modificadores y los efectos es los primeros aplican una modificacion al efecto deceado en si
+
+==================================
+Hechizos
++ Pacificador (El enemigo seleccionado no ataca)
++ Piel electrica (enemigos sufren al tocarte)
++ Cuchilla protectora (ataque con especialidad contra otros ataques)
++ Clon estatico?
++ Mover objetos (o atraerlos)
++ Rayo de hielo
++ Escudo oloro (envenena en un radio del jugador)
++ Ametralladora (lluvia de fuego)
+
++ Atravezar paredes
++ Invisivilidad?
++ Bomba de tamaño variable
++ Agujero negro (tipo smash)
++ Movimiento instantanio
++ Kamehame-ha (rayo gigante)
++ Henquidama (bola de energia gigante y variable)
+
+Simbolos
+*Aplicadores
+	+ Esfera (usa de direccion, velocidad, y tamaño; tambien puede llegar a usar lugar de aparicion?; detonante?)
+	+ Aplicar a uno mismo
+	+ Rango de efecto
+	+ Rayo (usa direccion, distancia y grosor)
+	+ Esfera funcion
+	+ Tele-aplicacion (se aplica en una posicion porque si)
+	
+* Efectos
+	+ Da;o
+	+ Localizar objetivos?
+	+ Crear entidad (clon?)
+	+ Influenciar entidad (momento)
+	+ Posion (sistema para esto)
+	+ Paralizar
+	+ Relentizar (sera lo mismo que paralizar?)
+	+ Penalizar? (hacer da;o en funcion del movimiento de la creatura)
+	+ Construir?
+	+ Escudo?
+
+* Filtros
+	+ Filtro contra ataques
+	+ Filtro de niveles
+	+ Filtro max-afectados?
+	
+* Modificadores
+	+ Doble efecto (aplicar dos efectos distintos, tal vez haya triple efecto tambien, y asi)
+	+ Consumir? (stamina o resistencia)
+	+ Esperar
+	+ Aplicacion multidireccional (solo funciona en efectos que requieran muchas direcciones)
